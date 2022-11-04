@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+.web-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    padding: 10px;
+    max-width: 1000px;
+    height: auto;
+}
+.card-body1{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url(images\bg-pattern-quotation.svg);
+}
+.card-body2{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    grid-column-start: 3;
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-body3{
+    background-color: white;
+    grid-row-start: 2;
+    margin: 10px 10px 0 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-body4{
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-body5{
+    background-color: white;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 0 0 0 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-name{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+img.name-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+.name{
+    font-size: 15px;
+}
+.status{
+    opacity: 50%;
+}
+.rev{
+    font-size: 17px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.story{
+    opacity: 70%;
+    margin-bottom: 20px;
+}
+.card-name1{
+    display: flex;
+    justify-content: space-between;
+}
+.card-rev{
+    margin-top: -50px;
+}
+@media screen and (max-width: 600px) {
+    .web-body{
+        height: auto;
+        width: 375px;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
